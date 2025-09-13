@@ -1,2 +1,2 @@
 export * from './lib/feature-one-module';
-// export * from '@angular-connect/utils';
+export * from './lib/feature'; // Temporarily commented for build

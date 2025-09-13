@@ -9,6 +9,7 @@
     "build": {
       "executor": "@nx/angular:ng-packagr-lite",
       "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "dependsOn": [],
       "options": {
         "project": "libs/utils/ng-package.json",
         "tsConfig": "libs/utils/tsconfig.lib.json"
