@@ -9,20 +9,10 @@
     ],
     "sharedGlobals": ["{workspaceRoot}/.github/workflows/ci.yml"]
   },
-  "nxCloudId": "68c5322d5b1cd94f1001b64f",
+  "nxCloudId": "68c53af5a068e1dcd3555e4c",
   "plugins": [
-    {
-      "plugin": "@nx/angular/plugin",
-      "options": {
-        "targetNamePrefix": ""
-      }
-    },
-    {
-      "plugin": "@nx/eslint/plugin",
-      "options": {
-        "targetName": "lint"
-      }
-    },
+    { "plugin": "@nx/angular/plugin", "options": { "targetNamePrefix": "" } },
+    { "plugin": "@nx/eslint/plugin", "options": { "targetName": "lint" } },
     {
       "plugin": "@nx/rspack/plugin",
       "options": {
@@ -54,9 +44,7 @@
       "style": "css",
       "unitTestRunner": "none"
     },
-    "@nx/angular:library": {
-      "linter": "eslint",
-      "unitTestRunner": "none"
-    }
-  }
+    "@nx/angular:library": { "linter": "eslint", "unitTestRunner": "none" }
+  },
+  "nxCloudUrl": "https://staging.nx.app"
 }
