@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@angular-connect/feature-flag": ["libs/feature-flag/src/index.ts"],
+      "@angular-connect/feature-one": ["libs/feature-one/src/index.ts"],
+      "@angular-connect/utils": ["libs/utils/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

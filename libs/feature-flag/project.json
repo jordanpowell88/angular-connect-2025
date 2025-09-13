@@ -1,0 +1,29 @@
+{
+  "name": "feature-flag",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/feature-flag/src",
+  "prefix": "lib",
+  "projectType": "library",
+  "tags": ["scope:shared", "type:lib"],
+  "implicitDependencies": ["feature-one"],
+  "targets": {
+    "build": {
+      "executor": "@nx/angular:ng-packagr-lite",
+      "outputs": ["{workspaceRoot}/dist/{projectRoot}"],
+      "options": {
+        "project": "libs/feature-flag/ng-package.json",
+        "tsConfig": "libs/feature-flag/tsconfig.lib.json"
+      },
+      "configurations": {
+        "production": {
+          "tsConfig": "libs/feature-flag/tsconfig.lib.prod.json"
+        },
+        "development": {}
+      },
+      "defaultConfiguration": "production"
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  }
+}
